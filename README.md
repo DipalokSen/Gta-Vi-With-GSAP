@@ -1,173 +1,113 @@
-Create a GTA 6 Website with React.js
+<h1>🎮 GTA 6 Website with React.js</h1>
 
-Overview
+<p>A visually dynamic <strong>GTA 6-themed website</strong> built with <strong>React.js</strong>, featuring <strong>parallax effects</strong>, <strong>SVG animations</strong>, and <strong>GSAP-powered transitions</strong>. Inspired by the 
+<a href="https://www.youtube.com/watch?v=tccIAsqFgG0&t=5081s" target="_blank">official GTA 6 trailer</a>, this project blends creative visuals with interactive front-end development.</p>
 
-This project is Made using React.js, inspired by the official GTA 6 trailer (https://www.youtube.com/watch?v=tccIAsqFgG0&t=5081s). The website features a parallax effect, SVG animations, and GSAP (GreenSock Animation Platform) for smooth interactions.
+<hr />
 
-Features
+<h2>🚀 Overview</h2>
+<ul>
+  <li>🎯 Parallax interactions triggered by mouse movement</li>
+  <li>🖼️ SVG-based animated <strong>“VI”</strong> logo with masking effects</li>
+  <li>⚙️ Smooth animations using <strong>GSAP (GreenSock Animation Platform)</strong></li>
+  <li>📱 Basic responsive layout (further mobile optimization recommended)</li>
+  <li>🎨 AI-generated visuals (characters, sky, cityscape)</li>
+</ul>
 
+<hr />
 
+<h2>🧰 Features</h2>
+<ul>
+  <li><strong>Parallax Effect</strong> – Interactive depth with mouse movement</li>
+  <li><strong>Animated SVG Logo</strong> – "VI" logo animation with masking</li>
+  <li><strong>GSAP Animations</strong> – Scale, rotate, and transition elements</li>
+  <li><strong>Responsive Design</strong> – Basic support for multiple screen sizes</li>
+  <li><strong>Custom Graphics</strong> – AI-generated backgrounds and characters</li>
+</ul>
 
+<hr />
 
+<h2>📦 Prerequisites</h2>
+<ul>
+  <li>Node.js and npm installed</li>
+  <li>Basic knowledge of React.js</li>
+  <li>A code editor like <strong>VS Code</strong> (Cursor AI extension optional)</li>
+</ul>
 
-Parallax Effect: Mouse movement triggers a parallax effect on images and text.
+<hr />
 
-
-
-SVG Animation: An animated "VI" logo with masking effects.
-
-
-
-GSAP Integration: Animations for scaling, rotating, and transitioning elements.
-
-
-
-Responsive Design: Basic structure adaptable to different screen sizes (further optimization recommended).
-
-
-
-Custom Graphics: AI-generated images for characters, skies, and buildings.
-
-Prerequisites
-
-
-
-
-
-Node.js and npm installed.
-
-
-
-Basic knowledge of React.js and JavaScript.
-
-
-
-Text editor (e.g., VS Code with Cursor AI extension).
-
-Installation
-
-
-
-
-
-Clone the repository or create a new React app:
-
+<h2>⚙️ Installation</h2>
+<pre><code># Step 1: Create a React app
 npx create-react-app@latest . --template react
 
-
-
-Install dependencies:
-
+# Step 2: Install dependencies
 npm install gsap react-icons tailwindcss postcss autoprefixer
 
-
-
-Configure Tailwind CSS:
-
-
-
-
-
-Initialize Tailwind: npx tailwindcss init -p
-
-
-
-Update tailwind.config.js with content paths and plugins.
-
-
-
-Import Tailwind in index.css: @import 'tailwindcss/base'; @import 'tailwindcss/components'; @import 'tailwindcss/utilities';
-
-
-
-Start the development server:
-
-npm run dev
-
-Usage
-
-
-
-
-
-Place AI-generated images (e.g., bg.png, sky.png, girl.png) in the public folder.
-
-
-
-Run the app and interact with the mouse to see the parallax effect.
-
-
-
-The SVG animation triggers on load, transitioning to the main content.
-
-Project Structure
-
-
-
-
-
-public/: Stores static assets like images.
-
-
-
-src/: Contains React components and styles.
-
-
-
-index.css: Global styles with Tailwind imports.
-
-
-
-main.jsx: Main React component with GSAP animations.
-
-Development Process
-
-
-
-
-
-Planning: Designed a layout with two layers (SVG and content) for parallax.
-
-
-
-Graphics Creation: Used AI tools (e.g., Sora AI) to generate custom images.
-
-
-
-Coding: Built with React, Tailwind CSS for styling, and GSAP for animations.
-
-
-
-Testing: Adjusted scaling and positioning for smooth mouse interactions.
-
-Credits
-
-
-
-
-
-Inspired by the GTA 6 Official Trailer by Rockstar Games.
-
-
-
-Tutorial guidance from Sheriyans Coding School (https://www.youtube.com/watch?v=tccIAsqFgG0&t=5081s).
-
-Future Improvements
-
-
-
-
-
-Add mobile responsiveness.
-
-
-
-Optimize image loading for better performance.
-
-
-
-Enhance animations with additional GSAP effects.
-
-License
-
-This project is for educational purposes only. Feel free to fork and modify!
+# Step 3: Initialize Tailwind CSS
+npx tailwindcss init -p
+</code></pre>
+
+<h3>Tailwind Setup</h3>
+<p>Update <code>tailwind.config.js</code>:</p>
+<pre><code>content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]</code></pre>
+
+<p>Import Tailwind into <code>index.css</code>:</p>
+<pre><code>@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';</code></pre>
+
+<h3>Start Development Server</h3>
+<pre><code>npm run dev</code></pre>
+
+<hr />
+
+<h2>🧑‍💻 Usage</h2>
+<ol>
+  <li>Place AI-generated images (<code>bg.png</code>, <code>sky.png</code>, <code>girl.png</code>, etc.) in the <code>public/</code> folder.</li>
+  <li>Run the app and move your mouse around to experience the parallax animation.</li>
+  <li>The <strong>animated SVG logo</strong> appears on page load, then transitions to main content.</li>
+</ol>
+
+<hr />
+
+<h2>📁 Project Structure</h2>
+<pre><code>├── public/
+│   └── [static assets like bg.png, girl.png]
+├── src/
+│   ├── components/
+│   └── main.jsx   # Main logic with GSAP animations
+├── index.css      # Global styles and Tailwind imports
+├── tailwind.config.js
+</code></pre>
+
+<hr />
+
+<h2>🛠️ Development Process</h2>
+<ul>
+  <li><strong>Planning</strong> – Dual-layer design for SVG and content</li>
+  <li><strong>Graphics</strong> – Generated custom assets using AI tools (e.g., Sora AI)</li>
+  <li><strong>Development</strong> – React + Tailwind CSS + GSAP</li>
+  <li><strong>Testing</strong> – Tuned scale and positioning for fluid motion</li>
+</ul>
+
+<hr />
+
+<h2>📽️ Credits</h2>
+<ul>
+  <li>Inspired by the <strong>GTA 6 Official Trailer</strong> by Rockstar Games</li>
+  <li>Tutorial by <a href="https://www.youtube.com/watch?v=tccIAsqFgG0&t=5081s" target="_blank">Sheriyans Coding School</a></li>
+</ul>
+
+<hr />
+
+<h2>🔮 Future Improvements</h2>
+<ul>
+  <li>Enhance <strong>mobile responsiveness</strong></li>
+  <li>Optimize image loading (e.g., lazy loading, compression)</li>
+  <li>Add more dynamic <strong>GSAP animation effects</strong></li>
+</ul>
+
+<hr />
+
+<h2>📄 License</h2>
+<p>This project is created for <strong>educational purposes only</strong>.<br />Feel free to fork, modify, and experiment!</p>
