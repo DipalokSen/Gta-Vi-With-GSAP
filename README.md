@@ -95,7 +95,7 @@ npx tailwindcss init -p
 <h2>📽️ Credits</h2>
 <ul>
   <li>Inspired by the <strong>GTA 6 Official Trailer</strong> by Rockstar Games</li>
-  <li>Tutorial by <a href="https://www.youtube.com/watch?v=tccIAsqFgG0&t=5081s" target="_blank">Sheriyans Coding School</a></li>
+  
 </ul>
 
 <hr />
